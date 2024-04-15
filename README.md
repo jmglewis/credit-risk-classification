@@ -1,12 +1,10 @@
-# Module 12 Report Template
+# Credit Risk Classification: A Logistic Regression Approach
 
 ## Overview of the Analysis
 
-The analysis aims to build a predictive model for credit risk classification, predicting whether a loan is healthy or high-risk based on various financial attributes of borrowers.
+This analysis focuses on building a predictive model for credit risk classification, aiming to distinguish between healthy and high-risk loans based on various financial attributes of borrowers. The dataset includes key financial indicators such as loan size, interest rate, borrower income, debt-to-income ratio, and more. Logistic Regression, a suitable algorithm for binary classification tasks, is employed alongside resampling methods to address class imbalance.
 
-The dataset includes financial attributes such as loan size, interest rate, borrower income, debt-to-income ratio, number of accounts, derogatory marks, total debt, etc. The prediction target is the loan_status variable, indicating whether a loan is healthy (0) or high-risk (1).
-
-Key observations:
+### Key observations:
 
 The loan_status variable is balanced, with an equal number of healthy (0) and high-risk (1) loans.
 Logistic Regression is used as one of the classification algorithms.
@@ -18,13 +16,13 @@ Stages of the Machine Learning Process:
 
 - Model Evaluation: Metrics for model evaluation were imported from scikit-learn, including 'balanced_accuracy_score', 'confusion_matrix', and 'classification_report'. These metrics are essential for assessing the performance of machine learning models.
 
-Methods Used:
+### Methods Used:
 
 - Logistic Regression: The analysis utilized logistic regression, an algorithm suitable for binary classification tasks like credit risk classification. Logistic regression was provided and fitted to the training data, and its predictions were evaluated against the test data.
 
 - Resampling Method: Due to the imbalanced nature of the dataset, a resampling technique was employed to address this issue. Specifically, the RandomOverSampler method from the imbalanced-learn library was used to create a resampled training dataset. This technique helps mitigate the impact of class imbalance on model performance, leading to more accurate predictions.
 
-## Results
+### Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
@@ -66,7 +64,7 @@ This indicates that Model 2 correctly identifies all actual healthy loans.
 For class 1 (high-risk loan), the recall is 99%.
 This means that Model 2 correctly identifies 99% of the actual high-risk loans.
 
-## Summary
+### Summary
 
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
 * Which one seems to perform best? How do you know it performs best?
